@@ -1,7 +1,72 @@
-import { Card, Row, Col } from 'react-bootstrap';
-import './list-empleados.css';
+import { Card, Row } from 'react-bootstrap';
+import CardEmpleados from '../CardEmpleados/CardEmpleados';
 
 const ListEmpleados = () => {
+  let empleados = [
+    {
+      id: 1,
+      fullName: 'Laya Dueñas',
+      title: 'CEO',
+      department: 'Business',
+      pic: 'empleado01.png',
+    },
+    {
+      id: 2,
+      fullName: 'Astryd Vallés',
+      title: 'CMO',
+      department: 'Marketing',
+      pic: 'empleado02.png',
+    },
+    {
+      id: 3,
+      fullName: 'Shantell Meza',
+      title: 'CFO',
+      department: 'Business',
+      pic: 'empleado03.png',
+    },
+    {
+      id: 4,
+      fullName: 'Sergio Ocampo',
+      title: 'CTO',
+      department: 'Engineering',
+      pic: 'empleado04.png',
+    },
+    {
+      id: 5,
+      fullName: 'Ares Jiménez',
+      title: 'Art Director',
+      department: 'Marketing',
+      pic: 'empleado05.png',
+    },
+    {
+      id: 6,
+      fullName: 'Marta Pérez',
+      title: 'Frontend Dev',
+      department: 'Engineering',
+      pic: 'empleado06.png',
+    },
+    {
+      id: 7,
+      fullName: 'Ellen Balderas',
+      title: 'Digital Strategist',
+      department: 'Marketing',
+      pic: 'empleado07.png',
+    },
+    {
+      id: 8,
+      fullName: 'Cynthia Valentín',
+      title: 'Backend Dev',
+      department: 'Engineering',
+      pic: 'empleado08.png',
+    },
+    {
+      id: 9,
+      fullName: 'Bernard Jung',
+      title: 'DevOps Engineer',
+      department: 'Engineering',
+      pic: 'empleado09.png',
+    },
+  ];
   return (
     <Card>
       <Card.Body>
@@ -9,69 +74,9 @@ const ListEmpleados = () => {
           Lista de Empleados
         </Card.Title>
         <Row className="my-4">
-          <Col md={6} lg={4} className="mb-3">
-            <Card className="d-flex flex-row justify-content-beetween align-items-center p-2">
-              <div>
-                <img
-                  className="colorBox w-100"
-                  src="/src/assets/img/empleado01.png"
-                  width={100}
-                  alt="empleado01"
-                />
-              </div>
-              <Card.Body>
-                <Card.Title className="fw-bold text-uppercase line-clamp">
-                  Nombre Empleado
-                </Card.Title>
-                <Card.Text>
-                  Titulo{' '}
-                  <span className="badge text-bg-primary">Departamento</span>
-                </Card.Text>
-              </Card.Body>
-            </Card>
-          </Col>
-          <Col md={6} lg={4} className="mb-3">
-            <Card className="d-flex flex-row justify-content-beetween align-items-center p-2">
-              <div>
-                <img
-                  className="colorBox w-100"
-                  src="/src/assets/img/empleado02.png"
-                  width={100}
-                  alt="empleado02"
-                />
-              </div>
-              <Card.Body>
-                <Card.Title className="fw-bold text-uppercase line-clamp">
-                  Nombre Empleado 2
-                </Card.Title>
-                <Card.Text>
-                  Titulo{' '}
-                  <span className="badge text-bg-primary">Departamento</span>
-                </Card.Text>
-              </Card.Body>
-            </Card>
-          </Col>
-          <Col md={6} lg={4} className="mb-3">
-            <Card className="d-flex flex-row justify-content-beetween align-items-center p-2">
-              <div>
-                <img
-                  className="colorBox w-100"
-                  src="/src/assets/img/empleado03.png"
-                  width={100}
-                  alt="empleado03"
-                />
-              </div>
-              <Card.Body>
-                <Card.Title className="fw-bold text-uppercase line-clamp">
-                  Nombre Empleado 3
-                </Card.Title>
-                <Card.Text>
-                  Titulo{' '}
-                  <span className="badge text-bg-primary">Departamento</span>
-                </Card.Text>
-              </Card.Body>
-            </Card>
-          </Col>
+          {empleados.map((empleado) => (
+            <CardEmpleados key={empleado.id} empleado={empleado} />
+          ))}
         </Row>
       </Card.Body>
     </Card>

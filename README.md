@@ -20,7 +20,7 @@ Sigue estos pasos para clonar y ejecutar la aplicación en tu entorno local:
 1.  **Clona el repositorio:** En tu línea de comandos, ejecuta el siguiente comando para clonar el repositorio:
 
     ```
-    git clone https://github.com/jgromerou/practico1-React-ej1.git
+    git clone https://github.com/jgromerou/ej7-practico1-react.git
     ```
 
 2.  **Accede al directorio:** Ve al directorio de la aplicación clonada:
