@@ -1,8 +1,12 @@
-# Ejercicio 7 del TP1: React ![React Icon](./src/assets/react.svg)
+# Ejercicio 7 del TP1: Lista de Empleados - React ![React Icon](./src/assets/react.svg)
 
 ## Descripción
 
 Crear una aplicación web de lista de Empleados.
+
+## Link Versión en Producción
+
+[Netlify](https://ej7-tp1-react-rollingcode-romerouro.netlify.app/)
 
 ## Tecnologias / Herramientas 🛠
 
