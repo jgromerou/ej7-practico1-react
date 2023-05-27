@@ -8,7 +8,7 @@ const CardEmpleados = ({ empleado }) => {
         <div>
           <img
             className="colorBox w-100"
-            src={'/src/assets/img/' + empleado.pic}
+            src={'/public/img/' + empleado.pic}
             width={100}
             alt={empleado.fullName}
           />
